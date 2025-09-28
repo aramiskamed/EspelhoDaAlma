@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Espelho da Alma — Diário Elemental</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>🪞 Espelho da Alma</h1>
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="diario">Diário de Hoje</button>
+      <button class="tab-btn" data-tab="historico">Histórico & Tendências</button>
+      <button class="tab-btn" data-tab="ajuda">Guia & Método</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- DIÁRIO -->
+    <section id="diario" class="tab-content active">
+      <div class="card">
+        <div class="flex-row gap">
+          <div>
+            <label for="dataEntrada">Data</label>
+            <input id="dataEntrada" type="date" />
+          </div>
+          <div class="grow"></div>
+          <div class="actions-row">
+            <button id="btnLimparHoje" class="ghost">Limpar</button>
+            <button id="btnSalvarHoje" class="primary">Salvar sessão</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOGO -->
+      <section class="element-section">
+        <h2>🔥 Fogo</h2>
+        <p class="pergunta">Hoje usei minha energia com entusiasmo e clareza, ou fui impulsivo/irado?</p>
+        <div class="grid-2">
+          <div>
+            <h3>Qualidades Positivas</h3>
+            <div class="check-grid" data-element="fogo" data-type="positivo">
+              <label><input type="checkbox" value="Coragem" /> Coragem</label>
+              <label><input type="checkbox" value="Determinação" /> Determinação</label>
+              <label><input type="checkbox" value="Autoconfiança" /> Autoconfiança</label>
+              <label><input type="checkbox" value="Entusiasmo, vitalidade" /> Entusiasmo, vitalidade</label>
+              <label><input type="checkbox" value="Liderança natural" /> Liderança natural</label>
+              <label><input type="checkbox" value="Clareza e poder de decisão" /> Clareza e poder de decisão</label>
+            </div>
+          </div>
+          <div>
+            <h3>Qualidades Negativas</h3>
+            <div class="check-grid" data-element="fogo" data-type="negativo">
+              <label><input type="checkbox" value="Ira, agressividade" /> Ira, agressividade</label>
+              <label><input type="checkbox" value="Ódio, violência" /> Ódio, violência</label>
+              <label><input type="checkbox" value="Orgulho excessivo" /> Orgulho excessivo</label>
+              <label><input type="checkbox" value="Impaciência" /> Impaciência</label>
+              <label><input type="checkbox" value="Desejo de domínio sobre os outros" /> Desejo de domínio sobre os outros</label>
+              <label><input type="checkbox" value="Crueldade" /> Crueldade</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ÁGUA -->
+      <section class="element-section">
+        <h2>💧 Água</h2>
+        <p class="pergunta">Fui paciente e compassivo, ou fiquei preso em apegos/tristezas?</p>
+        <div class="grid-2">
+          <div>
+            <h3>Qualidades Positivas</h3>
+            <div class="check-grid" data-element="agua" data-type="positivo">
+              <label><input type="checkbox" value="Amor, compaixão" /> Amor, compaixão</label>
+              <label><input type="checkbox" value="Paciência, calma" /> Paciência, calma</label>
+              <label><input type="checkbox" value="Dedicação, capacidade de nutrir" /> Dedicação, capacidade de nutrir</label>
+              <label><input type="checkbox" value="Sensibilidade e empatia" /> Sensibilidade e empatia</label>
+              <label><input type="checkbox" value="Intuição refinada" /> Intuição refinada</label>
+              <label><input type="checkbox" value="Capacidade de adaptação" /> Capacidade de adaptação</label>
+            </div>
+          </div>
+          <div>
+            <h3>Qualidades Negativas</h3>
+            <div class="check-grid" data-element="agua" data-type="negativo">
+              <label><input type="checkbox" value="Preguiça, inércia" /> Preguiça, inércia</label>
+              <label><input type="checkbox" value="Dependência emocional" /> Dependência emocional</label>
+              <label><input type="checkbox" value="Melancolia, vitimismo" /> Melancolia, vitimismo</label>
+              <label><input type="checkbox" value="Ciúme e apego excessivo" /> Ciúme e apego excessivo</label>
+              <label><input type="checkbox" value="Covardia, submissão" /> Covardia, submissão</label>
+              <label><input type="checkbox" value="Sensualidade descontrolada" /> Sensualidade descontrolada</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AR -->
+      <section class="element-section">
+        <h2>🌬️ Ar</h2>
+        <p class="pergunta">Minha mente foi clara e criativa, ou dispersa e arrogante?</p>
+        <div class="grid-2">
+          <div>
+            <h3>Qualidades Positivas</h3>
+            <div class="check-grid" data-element="ar" data-type="positivo">
+              <label><input type="checkbox" value="Intelecto ágil, raciocínio lógico" /> Intelecto ágil, raciocínio lógico</label>
+              <label><input type="checkbox" value="Criatividade e imaginação" /> Criatividade e imaginação</label>
+              <label><input type="checkbox" value="Comunicação clara e persuasiva" /> Comunicação clara e persuasiva</label>
+              <label><input type="checkbox" value="Senso de justiça e equilíbrio" /> Senso de justiça e equilíbrio</label>
+              <label><input type="checkbox" value="Flexibilidade mental" /> Flexibilidade mental</label>
+              <label><input type="checkbox" value="Sociabilidade" /> Sociabilidade</label>
+            </div>
+          </div>
+          <div>
+            <h3>Qualidades Negativas</h3>
+            <div class="check-grid" data-element="ar" data-type="negativo">
+              <label><input type="checkbox" value="Instabilidade, superficialidade" /> Instabilidade, superficialidade</label>
+              <label><input type="checkbox" value="Tagarelice, falsidade" /> Tagarelice, falsidade</label>
+              <label><input type="checkbox" value="Indecisão" /> Indecisão</label>
+              <label><input type="checkbox" value="Orgulho intelectual, arrogância mental" /> Orgulho intelectual, arrogância mental</label>
+              <label><input type="checkbox" value="Desatenção, dispersão" /> Desatenção, dispersão</label>
+              <label><input type="checkbox" value="Tendência à mentira ou manipulação" /> Tendência à mentira ou manipulação</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TERRA -->
+      <section class="element-section">
+        <h2>🌍 Terra</h2>
+        <p class="pergunta">Mantive disciplina e estabilidade, ou fui rígido e medroso?</p>
+        <div class="grid-2">
+          <div>
+            <h3>Qualidades Positivas</h3>
+            <div class="check-grid" data-element="terra" data-type="positivo">
+              <label><input type="checkbox" value="Estabilidade, firmeza" /> Estabilidade, firmeza</label>
+              <label><input type="checkbox" value="Perseverança, paciência" /> Perseverança, paciência</label>
+              <label><input type="checkbox" value="Disciplina e ordem" /> Disciplina e ordem</label>
+              <label><input type="checkbox" value="Confiabilidade, responsabilidade" /> Confiabilidade, responsabilidade</label>
+              <label><input type="checkbox" value="Praticidade e senso de realidade" /> Praticidade e senso de realidade</label>
+              <label><input type="checkbox" value="Autocontrole" /> Autocontrole</label>
+            </div>
+          </div>
+          <div>
+            <h3>Qualidades Negativas</h3>
+            <div class="check-grid" data-element="terra" data-type="negativo">
+              <label><input type="checkbox" value="Obstinação rígida" /> Obstinação rígida</label>
+              <label><input type="checkbox" value="Avarícia, materialismo" /> Avarícia, materialismo</label>
+              <label><input type="checkbox" value="Desconfiança" /> Desconfiança</label>
+              <label><input type="checkbox" value="Indolência, teimosia" /> Indolência, teimosia</label>
+              <label><input type="checkbox" value="Falta de criatividade" /> Falta de criatividade</label>
+              <label><input type="checkbox" value="Pessimismo, medo excessivo" /> Pessimismo, medo excessivo</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>🏷️ Gatilhos / Tags do dia</h2>
+        <p class="muted">Adicione palavras-chave (ex.: trabalho, família, meditação). Pressione Enter para criar.</p>
+        <div id="tagsWrap" class="tags">
+          <input id="tagInput" type="text" placeholder="Digite e pressione Enter">
+          <div id="tagsList" class="tags-list"></div>
+        </div>
+      </section>
+
+      <!-- RESUMO & TRANSMUTAÇÃO -->
+      <section class="card">
+        <h2>🧭 Resumo, Balanceamento & Transmutação</h2>
+        <div id="resumoContainer" class="resumo"></div>
+        <textarea id="notas" placeholder="Anotações do dia: propostas de comportamento, reflexões e análises..."></textarea>
+      </section>
+    </section>
+
+    <!-- HISTÓRICO -->
+    <section id="historico" class="tab-content">
+      <div class="card">
+        <div class="flex-row gap">
+          <div class="grow">
+            <h2>📆 Registros</h2>
+            <p>Veja suas sessões salvas, exporte/import e observe tendências.</p>
+          </div>
+          <div class="actions-row">
+            <button id="btnExportarCSV" class="ghost">Exportar CSV</button>
+            <button id="btnExportarJSON" class="ghost">Exportar JSON</button>
+            <label class="import-label">
+              Importar JSON
+              <input type="file" id="inputImportarJSON" accept=".json" />
+            </label>
+          </div>
+        </div>
+        <div id="tabelaHistorico"></div>
+      </div>
+
+      <div class="card">
+        <h2>⚙️ Configurações</h2>
+        <div class="grid-2">
+          <div>
+            <h3>Pesos por elemento</h3>
+            <p class="muted">Multiplicadores aplicados ao saldo diário de cada elemento.</p>
+            <div class="weights">
+              <label>🔥 Fogo <input id="w_fogo" type="number" step="0.1" min="0" value="1"></label>
+              <label>💧 Água <input id="w_agua" type="number" step="0.1" min="0" value="1"></label>
+              <label>🌬️ Ar <input id="w_ar" type="number" step="0.1" min="0" value="1"></label>
+              <label>🌍 Terra <input id="w_terra" type="number" step="0.1" min="0" value="1"></label>
+            </div>
+            <button id="btnSalvarPesos" class="primary">Salvar pesos</button>
+          </div>
+          <div>
+            <h3>Criptografia (opcional)</h3>
+            <p class="muted">Proteja seus dados com senha local. Se perder a senha, os dados criptografados não poderão ser recuperados.</p>
+            <label>Senha: <input id="cryptoPass" type="password" placeholder="Defina/insira sua senha"></label>
+            <div class="actions-row">
+              <button id="btnAtivarCrypto" class="ghost">Ativar/Atualizar</button>
+              <button id="btnDesativarCrypto" class="ghost">Desativar</button>
+            </div>
+            <small class="muted">Usa PBKDF2 + AES-GCM via Web Crypto API no navegador.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>📈 Tendências</h2>
+        <p>Saldo diário por elemento (positivos − negativos, ponderado por intensidades e pesos).</p>
+        <div class="flex-row gap">
+          <label>Intensidade mínima para considerar no gráfico
+            <select id="minIntensity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </label>
+          <button id="btnRecalcularGrafico" class="ghost">Recalcular</button>
+        </div>
+        <div class="chart-wrap">
+          <canvas id="chartSaldo" width="1200" height="380"></canvas>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>🔐 Backup cifrado</h2>
+        <p class="muted">Exporte/importe um snapshot criptografado (usa a mesma senha de criptografia, em <b>Configurações</b>).</p>
+        <div class="actions-row">
+          <button id="btnExportBackup" class="ghost">Exportar backup (.enc.json)</button>
+          <label class="import-label">Importar backup
+            <input type="file" id="inputImportBackup" accept=".json,.enc.json">
+          </label>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>🗓️ Relatório semanal</h2>
+        <p>Gere um resumo imprimível da última semana (ou intervalo escolhido).</p>
+        <div class="flex-row gap">
+          <label>Início <input id="repStart" type="date"></label>
+          <label>Fim <input id="repEnd" type="date"></label>
+          <button id="btnRelatorio" class="primary">Gerar relatório</button>
+          <button id="btnImprimir" class="ghost">Imprimir / salvar PDF</button>
+        </div>
+        <div id="relatorioHTML" class="report"></div>
+      </div>
+    </section>
+
+    <!-- AJUDA / GUIA -->
+    <section id="ajuda" class="tab-content">
+      <article class="card">
+        <h2>Guia Rápido</h2>
+        <p>Cada pessoa mapeia sua alma (“espelho da alma”) identificando onde os elementos estão em excesso ou em falta, equilibrando-os pela introspecção e prática espiritual.</p>
+        <h3>Como usar</h3>
+        <ol>
+          <li>Escolha um momento de silêncio (após meditação é ideal).</li>
+          <li>Marque as qualidades positivas e negativas que se manifestaram hoje em cada elemento.</li>
+          <li>Avalie o equilíbrio geral e leia as propostas de transmutação geradas ao final.</li>
+          <li>Escreva suas anotações e salve. Reveja no histórico semanalmente.</li>
+        </ol>
+        <h3>Equilíbrio por excesso</h3>
+        <ul>
+          <li>Excesso de <b>Fogo</b> → pratique calma, paciência, compaixão.</li>
+          <li>Excesso de <b>Água</b> → cultive disciplina, ação, firmeza.</li>
+          <li>Excesso de <b>Ar</b> → treine concentração, silêncio, presença.</li>
+          <li>Excesso de <b>Terra</b> → cultive flexibilidade, criatividade, alegria.</li>
+        </ul>
+        <p><i>Objetivo:</i> transmutar o negativo em positivo, purificando e integrando os elementos em harmonia.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>Feito para prática diária de autoconhecimento. Seus dados ficam no seu dispositivo (localStorage).</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
